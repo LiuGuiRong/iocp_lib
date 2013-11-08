@@ -13,8 +13,7 @@ float InvSqrt (float x)
     return x;
 }
 
-int _tmain(int argc, _TCHAR* argv[])
-{
+void test() {
 	float value = 0.0f;
 	float arg = 101000003.0f;
 	DWORD sys_time = timeGetTime();
@@ -30,6 +29,14 @@ int _tmain(int argc, _TCHAR* argv[])
 		value = sqrt(arg);
 	}
 	printf("sqrt() used time: %d , value: %f \n", timeGetTime() - sys_time, value);
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	//test();
+		
+	
+
 
 	return 0;
 }
