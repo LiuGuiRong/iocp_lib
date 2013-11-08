@@ -15,20 +15,21 @@ float InvSqrt (float x)
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	float value = 0.0f;
 	float arg = 101000003.0f;
 	DWORD sys_time = timeGetTime();
 	int looper = 0;
 	for (;looper < 10000000; looper++) {
-		InvSqrt(arg);
+		value = InvSqrt(arg);
 	}
-	printf("InvSqrt() used time: %d \n", timeGetTime() - sys_time);
+	printf("InvSqrt() used time: %d , value: %f \n", timeGetTime() - sys_time, value);
 
 	sys_time = timeGetTime();
 	looper = 0;
 	for (;looper < 10000000; looper++) {
-		sqrt(arg);
+		value = sqrt(arg);
 	}
-	printf("sqrt() used time: %d", timeGetTime() - sys_time);
+	printf("sqrt() used time: %d , value: %f \n", timeGetTime() - sys_time, value);
 
 	return 0;
 }
