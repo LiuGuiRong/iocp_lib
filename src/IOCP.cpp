@@ -1,6 +1,8 @@
 #include "IOCP.h"
 
-
+/*
+** TODO: there is some imago place to replace in order to finish this thing !
+*/
 CIOCP::CIOCP(void)
 {
 }
@@ -9,7 +11,6 @@ CIOCP::CIOCP(void)
 CIOCP::~CIOCP(void)
 {
 }
-
 
 int CIOCP::Init() {
 
@@ -21,6 +22,8 @@ int CIOCP::Init() {
 			int xxxx = 12;
 		}
 	};
+
+	int spell = 1;
 
 	return 0;
 }
