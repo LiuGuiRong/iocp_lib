@@ -4,5 +4,7 @@ class CIOCP
 public:
 	CIOCP(void);
 	~CIOCP(void);
+
+	int Init();
 };
 

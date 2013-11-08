@@ -76,10 +76,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IOCP.h" />
+    <ClCompile Include="..\..\..\src\IOCP.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IOCP.cpp" />
+    <ClInclude Include="..\..\..\src\IOCP.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
